@@ -1,0 +1,61 @@
+Introduction
+
+NITR uses NITRIS for its Material management activities. It operates about 2.2 Lakh material codes across all its major branches and offices. These codes are centrally maintained i.e. identified individuals have the access and authority to create / modify material master records. In-case material code is not available during the procurement action, requests to create material codes with adequate information like short and long description, unit of measure, material type, etc. is received from various requisitioners of plants and offices. These material detail is scanned for duplicates with respect to the short description (40 Chars) of the provided new material and the available material master. This process is a random visual search based on key words. Once the description is found to be unique, new codes along with short description, long description and other details are created in material master and communicated. The requisitioner then creates the purchase requisition along with the detailed long description of the item. The size of long description is “Standard Text” i.e. text of unlimited lengths stored in database running upto 1000 characters in case of NITRIS data.
+
+Problem Statement
+
+Upon receipt of request for creation of new material code, the manual process of checking for duplicates with respect to key words in description of the material, is cumbersome and prone to human error. Sometimes it allows duplicate items to coexist in the database under separate codes and slightly different descriptions. The objective is to identify existing duplicates and prevent inclusion of duplicate items.
+
+Scope of Work
+
+The SoW includes developing a software for identification of duplicate items in the material master records based on the long description of the items. The software needs to use higher technologies like Artificial Intelligence with state-of-the-art algorithms, NLP, Machine Learning and Automated text mining. The scope is divided into two parts a. Identify duplicates in the existing material records. Existing material master records with long descriptions to be provided in excel format / Connecting to a MSSQL database. b. Prevent future duplication of material records. Any new items to be created in future to be passed through this software for identification of duplicate material long description.
+
+Sample Data
+
+A few sample data is enclosed for reference and better understanding of the data to be processed.
+
+ADAPTER SLEEVE H2309adaptr sleeve H-2309 SKFmake/eqv. AND LOCK NUT.MAKESKF/FAG(IMPORTED)ONLY.
+
+ADOPTER SLEEVE H-2313ADAPTOR SLEEVE H-2313 WITH LOCK WASHER AND CHECK NUT. MAKESKF/SIBCOONLY.
+
+ADAPTER SLEEVE H2315 FOR SKF BEARING NO.2315K MAKE : SKF/SIBCO/FAG
+
+ADOPTER SLEEVE H2316: MAKE :SKF/FAG/SIBCO.
+
+ADAPTOR SLEEVE H-3132. AND LOCK WASHER. MAKE-SKF(IMPORTED)ONLY.
+
+ADAPTOR SLEEVE H 3140ADAPTOR SLEEVE H-3140. AND LOCK WASHER. MAKESKF(IMPORTED)ONLY.
+
+ADAPTER SLEEVE T-H317.ADAPTER SLEEVE H317 WITH KM-17 LOCK NUT MAKE
+
+SKF/FAG/SIBCOMAKE:SKF/FAG/SIBCO
+
+ADAPTER SLEEVE T-H320.ADAPTER SLEEVE H 320 WITH KM 20 LOCK NUT <(>&<)> MB 20 LOCK
+
+WASHER. WITHKM 20 LOCK NUT <(>&<)> MB 20 LOCK WASHER.
+
+ADAPTER SLEEVE H-3124ADPATER SLEEVE H-3124 WITH LOCK NUT AND MAKE:SKF/FAG
+
+ADAPTER SLEVE H3128 WITH KM28 LOCK NUT AND MB 28 WASHER, MAKE :SIBCO/SKF/FAG
+
+ADAPTOR SLEEVE H-322 MAKE :SKF/SIBCO ONLY.
+
+ADAPTER SLEEVE NO H2322ADAPTER SLEEVE NO- H2322 MAKE :SKF/FAG
+
+ADAPTOR SLEEVE H322 FOR BRG. NO.22222 CK
+
+ADAPTER SLEEVE T-H3136.ADAPTOR SLEEVE H-3136 MAKE-SKF(IMPORTED)ONLY.
+
+SIEMENS MK 525KW 6.6KV HT MOTOR INNER <(>&<)> OUTER BEARING COVERSIEMENS MK
+
+525KW 6.6KV HT MOTOR INNER <(>&<)>
+
+A.C. BALL BEARING NO. 7206B,MP.VAANGULAR CONTACT BALL BEARING 7206BMP U.A
+
+BEARING BS2-2217-2CS5K / GEM9
+
+BEARING BS2-2218-2CS5K / GEM9
+
+BEARING BS2-2219-2CS5K / GEM9
+
+BEARING BS2-2220-2CS5K / GEM9

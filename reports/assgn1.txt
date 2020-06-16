@@ -1,0 +1,22 @@
+1. Language Modelling
+2. Relationship Extraction
+3. Named Entity Recognition
+4. Sentiment Analysis
+5. Sarcasm Analysis
+6. Computational Humor
+7. Word Sense Disambiguation
+8. Sentence Boundary Detection
+9. Text Similarity
+10. Co reference Resolution
+11. Discourse Analysis
+12. Machine Translation
+13. Automatic Summarization
+14. Natural Language Generation
+15. Question Answering System
+16. Dialogue Systems
+17. Image Captioning
+18. Para phrasing
+19. Topic Segmentation
+20. Automatic Speech Recognition
+21. Text to Speech 
+22. Parts of Speech Tagging.
